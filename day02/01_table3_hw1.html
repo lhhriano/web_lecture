@@ -29,6 +29,14 @@
 
         .tbUp{background-color: yellow;}
 
+        .saveBtn {
+            width:100px; 
+            height: 30px; 
+            background-color: red; 
+            border: 0; 
+            border-radius: 6px; 
+            box-shadow: 1px 1px 2px;
+        }
     </style>
 </head>
 
@@ -52,11 +60,9 @@
         <input type="checkbox" name="favorit" id="favorit" value="독서"> 독서
         <input type="checkbox" name="favorit" id="favorit" value="직업교육"> 직업교육
     </div>
-    
     <br/>
-    <button type="button">
-        <img src="빨간 버튼1.png" alt="빨간 버튼" onclick="alert('버튼이 클릭되었습니다')" >
-    </button>
+
+    <input type="submit" class="saveBtn" value="SAVE">
 
     <br/>
     <br/>
@@ -78,7 +84,7 @@
         <tr>
             <td rowspan="6"><input type="checkbox"></input></td>
             <td rowspan="6">1043</td>
-            <td><img src="asdf.png" alt="풍경사진" width="200px" height="150px"></td>
+            <td><img src="birdPicture.png" alt="풍경사진" width="200px" height="150px"></td>
             <td>홍길동</td>
             <td>개발</td>
             <td vertical-align="top">대리</td>
