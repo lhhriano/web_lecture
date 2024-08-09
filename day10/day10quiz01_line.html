@@ -76,10 +76,12 @@
         }
     </style>
 </head>
+
 <body>
     <h1>햄버거하우스 게임</h1>
     <button id="startBtn">START</button><button id="stopBtn">STOP</button>
     <hr>
+
     <div id="box">
         <div id="line1"><img src="images/confirm1.png"></div>
         <div id="line2"><img src="images/confirm1.png"></div>
@@ -105,6 +107,7 @@
         this.cellBox.setAttribute("class", "cellBox");
         return this.cellBox;
     }
+
     Box.prototype.start = function(speed) {
         this.y = 0;
         this.intervalRef = setInterval(() => {
@@ -115,6 +118,7 @@
             }
         }, speed);
     }
+
     Box.prototype.stop = function() {
         clearInterval(this.intervalRef);
         this.yPos = Math.floor(this.y / 100)*100;
@@ -127,11 +131,13 @@
         new Box(), new Box(), new Box(),
         new Box(), new Box(), new Box()
     ];
+
     const metrixArr = [
         [boxArr[0],boxArr[1],boxArr[2]],
         [boxArr[3],boxArr[4],boxArr[5]],
         [boxArr[6],boxArr[7],boxArr[8]]
     ];
+
     for(var i=0; i<9; i++) {
         const newBox = boxArr[i].init();
         divBox.appendChild(newBox);
@@ -196,5 +202,6 @@
         }, 1100);
     });
 </script>
+
 </body>
 </html>
